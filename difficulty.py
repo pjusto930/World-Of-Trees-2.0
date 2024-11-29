@@ -9,7 +9,7 @@ import avanzado
 pygame.init()
 
 # Creo y seteo valores a la pantalla
-pantalla = pygame.display.set_mode((500, 750))
+pantalla = pygame.display.set_mode((1300, 690))
 pygame.display.set_caption("Hungry Jump")  # Título de la ventana
 
 # Declaro e inserto el icono de la ventana

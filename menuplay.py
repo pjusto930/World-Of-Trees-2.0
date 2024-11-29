@@ -29,10 +29,10 @@ def play():
 
     # Configura la pantalla
     pantalla = pygame.display.set_mode((constantes.anchoVentana, constantes.altoVentana))
-    pygame.display.set_caption('Hungry Jump')
+    pygame.display.set_caption('World Of Trees')
 
     # Carga imágenes
-    icono = pygame.image.load("assets/images/items/banana0.png")
+    icono = pygame.image.load("assets/images/items/planta.png")
     pygame.display.set_icon(icono)
     fondo = pygame.image.load("assets/images/fondos/lvl 1.png").convert()
     sueloPasto = pygame.image.load("assets/images/fondos/sueloPasto.png")
