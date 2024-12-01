@@ -10,23 +10,23 @@ pygame.init()
 
 # Creo y seteo valores a la pantalla
 pantalla = pygame.display.set_mode((1300, 690))
-pygame.display.set_caption("Hungry Jump")  # Título de la ventana
+pygame.display.set_caption("World Of Trees")  # Título de la ventana
 
 # Declaro e inserto el icono de la ventana
 icono = pygame.image.load("assets/images/items/planta.png")
 pygame.display.set_icon(icono)
 
 # Fondo del menú
-menuBg = pygame.image.load("assets/images/fondos/menuBg.png")
+menuBg = pygame.image.load("assets/images/fondos/fondlevel.png")
 
-btnPrincipiante = pygame.image.load("assets/images/menu/btnStarter.png")
-btnPrincipiante = pygame.transform.scale(btnPrincipiante, (300, 100))
+btnPrincipiante = pygame.image.load("assets/images/menu/beginner.png")
+btnPrincipiante = pygame.transform.scale(btnPrincipiante, (700, 129))
 
-btnAvanzado = pygame.image.load("assets/images/menu/btnAdvanced.png")
-btnAvanzado = pygame.transform.scale(btnAvanzado, (300, 100))
+btnAvanzado = pygame.image.load("assets/images/menu/advanced.png")
+btnAvanzado = pygame.transform.scale(btnAvanzado, (700, 130))
 
 backArrow = pygame.image.load("assets/images/menu/backArrow.png")
-backArrow = pygame.transform.scale(backArrow, (230, 160))
+backArrow = pygame.transform.scale(backArrow, (600, 150))
 
 # Fuente
 def get_font(size):
@@ -60,7 +60,7 @@ def difi():
     def dif_menu():
         # Variables para el desplazamiento del fondo
         x = 0  # Posición inicial del fondo
-        velocidad_fondo = 1  # Velocidad de desplazamiento del fondo
+        velocidad_fondo = 0.4  # Velocidad de desplazamiento del fondo
 
         while True:
             # Desplazamiento horizontal del fondo
@@ -77,11 +77,11 @@ def difi():
             MENU_TEXT = get_font(25).render("", True, "#b68f40")
             MENU_RECT = MENU_TEXT.get_rect(center=(200, 300))
 
-            PLAY_BUTTON = Button(image=btnPrincipiante, pos=(250, 300), 
+            PLAY_BUTTON = Button(image=btnPrincipiante, pos=(650, 300), 
                                 text_input="", font=get_font(20), base_color="#d7fcd4", hovering_color="White")
-            OPTIONS_BUTTON = Button(image=btnAvanzado, pos=(250, 450), 
+            OPTIONS_BUTTON = Button(image=btnAvanzado, pos=(650, 450), 
                                 text_input="", font=get_font(25), base_color="#d7fcd4", hovering_color="White")
-            QUIT_BUTTON = Button(image=backArrow, pos=(95, 680), 
+            QUIT_BUTTON = Button(image=backArrow, pos=(100, 670), 
                                 text_input="", font=get_font(22), base_color="#d7fcd4", hovering_color="White")
 
             pantalla.blit(MENU_TEXT, MENU_RECT)

@@ -19,20 +19,21 @@ def get_font(size):
 def settings():
 
     # Creo y seteo valores a la pantalla
-    pantalla = pygame.display.set_mode((500, 750))
-    pygame.display.set_caption("Hungry Jump")  # Título de la ventana
+    pantalla = pygame.display.set_mode((1300, 690))
+    pygame.display.set_caption("World Of Trees")  # Título de la ventana
 
     # Declaro e inserto el icono de la ventana
-    icono = pygame.image.load("assets/images/items/banana0.png")
+    icono = pygame.image.load("assets/images/items/planta.png")
     pygame.display.set_icon(icono)
 
     # Fondo del menú
-    menuBg = pygame.image.load("assets/images/fondos/menuBg.png")
+    menuBg = pygame.image.load("assets/images/fondos/menuL.png")
 
-    español_image = pygame.image.load("assets/images/idiomas/mexico.jpg").convert()
+    español_image = pygame.image.load("assets/images/idiomas/espana.jpg").convert()
+    español_image.set_colorkey(constantes.negro)
     español_image = pygame.transform.scale(español_image, (140, 110))
 
-    usaSelected = pygame.image.load("assets/images/idiomas/usaselected.jpg").convert()
+    usaSelected = pygame.image.load("assets/images/idiomas/usa.jpg").convert()
     usaSelected = pygame.transform.scale(usaSelected, (160, 130))
 
     backArrow = pygame.image.load("assets/images/menu/backArrow.png")
@@ -63,7 +64,7 @@ def settings():
     # Menú de niveles
     def levels_menu():
         x = 0  # Posición inicial del fondo
-        velocidad_fondo = 1
+        velocidad_fondo = 0.5
 
         sound.sound_menu()
 
