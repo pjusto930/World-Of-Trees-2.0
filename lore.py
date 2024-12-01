@@ -12,7 +12,7 @@ pantalla = pygame.display.set_mode((1300, 690))
 pygame.display.set_caption("Hungry Jump")  # Título de la ventana
 
 # Declaro e inserto el icono de la ventana
-icono = pygame.image.load("assets/images/items/banana0.png")
+icono = pygame.image.load("assets/images/items/planta.png")
 pygame.display.set_icon(icono)
 
 # Fuente

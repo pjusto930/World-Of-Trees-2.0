@@ -14,17 +14,21 @@ pantalla = pygame.display.set_mode((1300, 690))
 pygame.display.set_caption("Hungry Jump")  # Título de la ventana
 
 # Declaro e inserto el icono de la ventana
-icono = pygame.image.load("assets/images/items/banana0.png")
+icono = pygame.image.load("assets/images/items/planta.png")
 pygame.display.set_icon(icono)
 
 # Fondo del menú
 menuBg = pygame.image.load("assets/images/fondos/menuBg.png")
 
-españolSelected = pygame.image.load("assets/images/idiomas/mexicoselected.jpg").convert()
-españolSelected = pygame.transform.scale(españolSelected, (160, 130))
+españolSelected = pygame.image.load("assets/images/idiomas/espana.jpg").convert()
+españolSelected = pygame.transform.scale(españolSelected, (350, 310))
+españolSelected.set_colorkey(constantes.negro)
 
 usa = pygame.image.load("assets/images/idiomas/usa.jpg").convert()
-usa = pygame.transform.scale(usa, (140, 110))
+usa = pygame.transform.scale(usa, (350, 310))
+
+
+
 
 backArrow = pygame.image.load("assets/images/menu/backArrow.png")
 backArrow = pygame.transform.scale(backArrow, (230, 160))
@@ -75,7 +79,7 @@ def configuracion():
 
             PLAY_BUTTON = Button(image=españolSelected, pos=((constantes.anchoVentana // 2 - 100), 300), 
                                  text_input="", font=get_font(20), base_color="#d7fcd4", hovering_color="White")
-            OPTIONS_BUTTON = Button(image=usa, pos=((constantes.anchoVentana // 2 + 100), 300), 
+            OPTIONS_BUTTON = Button(image=usa, pos=((constantes.anchoVentana // 2 + 200), 300), 
                                     text_input="", font=get_font(25), base_color="#d7fcd4", hovering_color="White")
             LEVEL3_BUTTON = Button(image=None, pos=(250, 500), 
                                     text_input="Créditos", font=get_font(30), base_color="white", hovering_color=constantes.ocre,  hover_effect=False, border_color="black")

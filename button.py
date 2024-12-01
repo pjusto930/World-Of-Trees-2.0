@@ -69,7 +69,7 @@ class Button:
             # Aumentar el tamaño de la imagen
             self.image = pygame.transform.scale(
                 self.original_image,
-                (int(self.rect.width * 2.2), int(self.rect.height * 2.2))
+                (int(self.rect.width * 1.1), int(self.rect.height * 1.1))
             )
             self.rect = self.image.get_rect(center=(self.x_pos, self.y_pos))
         else:

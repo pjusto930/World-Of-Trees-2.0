@@ -47,7 +47,7 @@ def options():
 def main_menu():
     # Variables para el desplazamiento del fondo
     x = 0  # Posición inicial del fondo
-    velocidad_fondo = 1  # Velocidad de desplazamiento del fondo
+    velocidad_fondo = 0.5  # Velocidad de desplazamiento del fondo
 
     # Carga la imagen con el nombre del juego
     titulo = pygame.image.load("assets/images/menu/tutilo.png")
@@ -59,11 +59,11 @@ def main_menu():
 
     tuercaSelected = pygame.image.load("assets/images/menu/Config selected.png")
 
-    bPlay = pygame.image.load("assets/images/menu/StartButton.png")
-    bPlay = pygame.transform.scale(bPlay, (300, 180))
+    bPlay = pygame.image.load("assets/images/menu/jugar.png")
+    bPlay = pygame.transform.scale(bPlay, (1000, 180))
 
-    bPlaySelected = pygame.image.load("assets/images/menu/StartSelected.png")
-    bPlaySelected = pygame.transform.scale(bPlaySelected, (350, 225))
+    bPlaySelected = pygame.image.load("assets/images/menu/jugarselect.png")
+    bPlaySelected = pygame.transform.scale(bPlaySelected, (1000, 181))
 
     # Llama a la función sonido del archivo sound
     sound.sound_menu() # Reproduce el soundtrack del primer nivel
@@ -102,7 +102,7 @@ def main_menu():
             OPTIONS_BUTTON = Button(image=tuerca, pos=(1200, 70), 
                                     text_input="", font=get_font(25), base_color="#d7fcd4", hovering_color="White")
             
-        QUIT_BUTTON = Button(image=pygame.image.load("assets/images/menu/botonSalir.png"), pos=(70, 90), 
+        QUIT_BUTTON = Button(image=pygame.image.load("assets/images/menu/btnsalir.png"), pos=(70, 90), 
                             text_input="", font=get_font(22), base_color="#d7fcd4", hovering_color="White")
 
         pantalla.blit(MENU_TEXT, MENU_RECT)

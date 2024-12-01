@@ -7,9 +7,9 @@ class player(pygame.sprite.Sprite):
         super().__init__()
 
         # Carga la imagen del personaje
-        self.imagen_estatica = pygame.image.load('assets/images/personajes/niño0.png').convert_alpha()
+        self.imagen_estatica = pygame.image.load('assets/images/personajes/niño0.png').convert_alpha() 
         self.imagen_estatica = pygame.transform.scale(self.imagen_estatica, (constantes.anchoPersonaje, constantes.altoPersonaje))
-
+        
         # Carga las imágenes para las animaciones
         self.imagen_derecha = pygame.image.load('assets/images/personajes/niño1.png').convert_alpha()
         self.imagen_izquierda = pygame.image.load('assets/images/personajes/niño1i.png').convert_alpha()

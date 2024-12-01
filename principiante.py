@@ -10,26 +10,26 @@ pygame.init()
 
 # Creo y seteo valores a la pantalla
 pantalla = pygame.display.set_mode((1300, 690))
-pygame.display.set_caption("Hungry Jump")  # Título de la ventana
+pygame.display.set_caption("World Of trees")  # Título de la ventana
 
 # Declaro e inserto el icono de la ventana
-icono = pygame.image.load("assets/images/items/banana0.png")
+icono = pygame.image.load("assets/images/items/planta.png")
 pygame.display.set_icon(icono)
 
 # Fondo del menú
-menuBg = pygame.image.load("assets/images/fondos/menuBg.png")
+menuBg = pygame.image.load("assets/images/fondos/fondlevel.png")
 
 btnLevel1 = pygame.image.load("assets/images/menu/btnlevel1.png")
-btnLevel1 = pygame.transform.scale(btnLevel1, (250, 150))
+btnLevel1 = pygame.transform.scale(btnLevel1, (650, 99))
 
 btnLevel2 = pygame.image.load("assets/images/menu/btnlevel2.png")
-btnLevel2 = pygame.transform.scale(btnLevel2, (250, 150))
+btnLevel2 = pygame.transform.scale(btnLevel2, (600, 100))
 
 btnLevel3 = pygame.image.load("assets/images/menu/btnlevel3.png")
-btnLevel3 = pygame.transform.scale(btnLevel3, (250, 150))
+btnLevel3 = pygame.transform.scale(btnLevel3, (690, 110))
 
 backArrow = pygame.image.load("assets/images/menu/backArrow.png")
-backArrow = pygame.transform.scale(backArrow, (230, 160))
+backArrow = pygame.transform.scale(backArrow, (600, 150))
 
 # Fuente
 def get_font(size):
@@ -64,7 +64,7 @@ def levels_p():
     # Menú de niveles
     def levels_menu():
         x = 0  # Posición inicial del fondo
-        velocidad_fondo = 1
+        velocidad_fondo = 0.3
 
         sound.sound_menu()
 
@@ -76,13 +76,13 @@ def levels_p():
 
             MENU_MOUSE_POS = pygame.mouse.get_pos()
 
-            PLAY_BUTTON = Button(image=btnLevel1, pos=(250, 200), 
+            PLAY_BUTTON = Button(image=btnLevel1, pos=(662, 200), 
                                  text_input="", font=get_font(20), base_color="#d7fcd4", hovering_color="White")
-            OPTIONS_BUTTON = Button(image=btnLevel2, pos=(250, 350), 
+            OPTIONS_BUTTON = Button(image=btnLevel2, pos=(662, 350), 
                                     text_input="", font=get_font(25), base_color="#d7fcd4", hovering_color="White")
-            LEVEL3_BUTTON = Button(image=btnLevel3, pos=(250, 500), 
+            LEVEL3_BUTTON = Button(image=btnLevel3, pos=(662, 500), 
                                     text_input="", font=get_font(25), base_color="#d7fcd4", hovering_color="White")
-            QUIT_BUTTON = Button(image=backArrow, pos=(95, 680), 
+            QUIT_BUTTON = Button(image=backArrow, pos=(100, 676), 
                                  text_input="", font=get_font(22), base_color="#d7fcd4", hovering_color="White")
 
             for button in [PLAY_BUTTON, OPTIONS_BUTTON, LEVEL3_BUTTON, QUIT_BUTTON]:
