@@ -15,11 +15,11 @@ pantalla = pygame.display.set_mode((1300, 690))
 pygame.display.set_caption("World Of Trees") #Titulo de la ventana
 
 #Declaro e inserto el icono de la ventana
-icono = pygame.image.load("assets/images/items/planta.png")
+icono = pygame.image.load('assets/images/items/planta.png')
 pygame.display.set_icon(icono)
 
 #Fondo del menu
-menuBg = pygame.image.load("assets/images/fondos/menuL.png")
+menuBg = pygame.image.load("assets/images/fondos/menuL.png") 
 imagen_config = pygame.image.load("assets/images/fondos/menuConfig.png").convert()
 imagen_config = pygame.transform.scale(imagen_config, (constantes.anchoVentana, constantes.altoVentana))
 
