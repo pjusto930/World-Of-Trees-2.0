@@ -18,7 +18,7 @@ icono = pygame.image.load("assets/images/items/planta.png")
 pygame.display.set_icon(icono)
 
 # Fondo del menú
-menuBg = pygame.image.load("assets/images/fondos/menuBg.png")
+menuBg = pygame.image.load("assets/images/fondos/menuL.png")
 
 españolSelected = pygame.image.load("assets/images/idiomas/espana.jpg").convert()
 españolSelected = pygame.transform.scale(españolSelected, (350, 310))
