@@ -19,7 +19,7 @@ icono = pygame.image.load('assets/images/items/planta.png')
 pygame.display.set_icon(icono)
 
 #Fondo del menu
-menuBg = pygame.image.load("assets/images/fondos/menuBg.png")
+menuBg = pygame.image.load("assets/images/fondos/menuL.png")
 imagen_config = pygame.image.load("assets/images/fondos/menuConfig.png").convert()
 imagen_config = pygame.transform.scale(imagen_config, (constantes.anchoVentana, constantes.altoVentana))
 
@@ -59,10 +59,10 @@ def main_menu():
 
     tuercaSelected = pygame.image.load("assets/images/menu/config.png")
 
-    bPlay = pygame.image.load("assets/images/menu/StartButton.png")
+    bPlay = pygame.image.load("assets/images/menu/play.png")
     bPlay = pygame.transform.scale(bPlay, (300, 180))
 
-    bPlaySelected = pygame.image.load("assets/images/menu/StartSelected.png")
+    bPlaySelected = pygame.image.load("assets/images/menu/play selected.png")
     bPlaySelected = pygame.transform.scale(bPlaySelected, (350, 225))
 
     # Llama a la función sonido del archivo sound
