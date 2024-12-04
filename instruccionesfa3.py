@@ -10,7 +10,7 @@ pygame.init()
 
 # Creo y seteo valores a la pantalla
 pantalla = pygame.display.set_mode((1300, 690))
-pygame.display.set_caption("Hungry Jump")  # Título de la ventana
+pygame.display.set_caption("World Of Trees")  # Título de la ventana
 
 # Declaro e inserto el icono de la ventana
 icono = pygame.image.load("assets/images/items/planta.png")
@@ -23,7 +23,7 @@ def get_font(size):
 def instrucciones():
 
     # Fondo del menú
-    hoja = pygame.image.load("assets/images/menu/Instrucciones.png")
+    hoja = pygame.image.load("assets/images/menu/instrucciones.png")
     hoja = pygame.transform.scale(hoja, (constantes.anchoVentana, constantes.altoVentana))
 
     while True:
