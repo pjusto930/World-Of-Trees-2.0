@@ -10,7 +10,7 @@ pygame.init()
 
 # Creo y seteo valores a la pantalla
 pantalla = pygame.display.set_mode((1300, 690))
-pygame.display.set_caption("Hungry Jump")  # Título de la ventana
+pygame.display.set_caption("World Of trees")  # Título de la ventana
 
 # Declaro e inserto el icono de la ventana
 icono = pygame.image.load("assets/images/items/planta.png")
@@ -19,13 +19,13 @@ pygame.display.set_icon(icono)
 # Fondo del menú
 menuBg = pygame.image.load("assets/images/fondos/menuBg.png")
 
-btnLevel1 = pygame.image.load("assets/images/menu/btnlevel1.png")
+btnLevel1 = pygame.image.load("assets/images/menu/btnnivel1.png")
 btnLevel1 = pygame.transform.scale(btnLevel1, (250, 150))
 
-btnLevel2 = pygame.image.load("assets/images/menu/btnlevel2.png")
+btnLevel2 = pygame.image.load("assets/images/menu/btnnivel2.png")
 btnLevel2 = pygame.transform.scale(btnLevel2, (250, 150))
 
-btnLevel3 = pygame.image.load("assets/images/menu/btnlevel3.png")
+btnLevel3 = pygame.image.load("assets/images/menu/btnnivel3.png")
 btnLevel3 = pygame.transform.scale(btnLevel3, (250, 150))
 
 backArrow = pygame.image.load("assets/images/menu/backArrow.png")

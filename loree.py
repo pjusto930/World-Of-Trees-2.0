@@ -60,9 +60,9 @@ def reproducir_video(video_path, audio_path, on_stop_callback):
     pygame.mixer.music.stop()
 
 def instrucciones():
-    reproducir_video("assets/animations/animacionIngles.mp4", "assets/animations/animacionIngles.mp3", on_stop_callback=dificultad) 
+     reproducir_video("assets/animations/historiaingles.mp4", "assets/animations/historiaingles.mp3", on_stop_callback=dificultad) 
 
-    while True:
+     while True:
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
