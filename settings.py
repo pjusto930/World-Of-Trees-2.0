@@ -29,7 +29,7 @@ def settings():
     # Fondo del menú
     menuBg = pygame.image.load("assets/images/fondos/menuL.png")
 
-    español_image = pygame.image.load("assets/images/idiomas/espana.jpg").convert()
+    español_image = pygame.image.load("assets/images/idiomas/espana.jpg")
     español_image.set_colorkey(constantes.negro)
     español_image = pygame.transform.scale(español_image, (140, 110))
 

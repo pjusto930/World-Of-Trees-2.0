@@ -20,11 +20,11 @@ pygame.display.set_icon(icono)
 # Fondo del menú
 menuBg = pygame.image.load("assets/images/fondos/menuL.png")
 
-españolSelected = pygame.image.load("assets/images/idiomas/espana.jpg").convert()
+españolSelected = pygame.image.load("assets/images/idiomas/espana.jpg")
 españolSelected = pygame.transform.scale(españolSelected, (350, 310))
 españolSelected.set_colorkey(constantes.negro)
 
-usa = pygame.image.load("assets/images/idiomas/usa.jpg").convert()
+usa = pygame.image.load("assets/images/idiomas/usa.jpg")
 usa = pygame.transform.scale(usa, (350, 310))
 
 
