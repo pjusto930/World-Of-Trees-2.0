@@ -29,7 +29,7 @@ def play():
 
     # Configura la pantalla
     pantalla = pygame.display.set_mode((constantes.anchoVentana, constantes.altoVentana))
-    pygame.display.set_caption('Hungry Jump')
+    pygame.display.set_caption('World Of Trees')
 
     # Carga imágenes
     icono = pygame.image.load("assets/images/items/planta.png")

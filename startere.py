@@ -15,7 +15,7 @@ pantalla = pygame.display.set_mode((1300, 690))
 pygame.display.set_caption("World Of Trees") #Titulo de la ventana
 
 #Declaro e inserto el icono de la ventana
-icono = pygame.image.load("assets/images/items/planta.png")
+icono = pygame.image.load('assets/images/items/planta.png')
 pygame.display.set_icon(icono)
 
 #Fondo del menu
@@ -31,7 +31,7 @@ def get_font(size):
 def jugar():
     import sound
     sound.sound_clic2() # Reproduce el sonido del botón
-    from loree import lore
+    from lore import lore
     lore() #mando llamar la funcion play del archivo menuplay
 
 #Función de la pantalla opciones    
@@ -40,8 +40,8 @@ def options():
         # Llama a la función sonido del archivo sound
         sound.sound_menu() # Reproduce el soundtrack del primer nivel
 
-        from settings import settings
-        settings()
+        from configuracion import configuracion
+        configuracion()
 
 #Funcion del menu principal
 def main_menu():
@@ -60,10 +60,10 @@ def main_menu():
     tuercaSelected = pygame.image.load("assets/images/menu/config.png")
 
     bPlay = pygame.image.load("assets/images/menu/play.png")
-    bPlay = pygame.transform.scale(bPlay, (1000, 180))
+    bPlay = pygame.transform.scale(bPlay, (300, 180))
 
-    bPlaySelected = pygame.image.load("assets/images/menu/playselect.png")
-    bPlaySelected = pygame.transform.scale(bPlaySelected, (1000, 181))
+    bPlaySelected = pygame.image.load("assets/images/menu/play selected.png")
+    bPlaySelected = pygame.transform.scale(bPlaySelected, (350, 225))
 
     # Llama a la función sonido del archivo sound
     sound.sound_menu() # Reproduce el soundtrack del primer nivel
