@@ -19,13 +19,13 @@ pygame.display.set_icon(icono)
 # Fondo del menú
 menuBg = pygame.image.load("assets/images/fondos/menuBg.png")
 
-btnLevel1 = pygame.image.load("assets/images/menu/levelone.png")
+btnLevel1 = pygame.image.load("assets/images/menu/btnlevel1.png")
 btnLevel1 = pygame.transform.scale(btnLevel1, (250, 150))
 
-btnLevel2 = pygame.image.load("assets/images/menu/leveltwo.png")
+btnLevel2 = pygame.image.load("assets/images/menu/btnlevel2.png")
 btnLevel2 = pygame.transform.scale(btnLevel2, (250, 150))
 
-btnLevel3 = pygame.image.load("assets/images/menu/levelthree.png")
+btnLevel3 = pygame.image.load("assets/images/menu/btnlevel3.png")
 btnLevel3 = pygame.transform.scale(btnLevel3, (250, 150))
 
 backArrow = pygame.image.load("assets/images/menu/backArrow.png")

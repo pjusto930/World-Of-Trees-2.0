@@ -57,7 +57,7 @@ def main_menu():
     tuerca = pygame.image.load("assets/images/menu/config.png")
     tuerca = pygame.transform.scale(tuerca, (110, 110))
 
-    tuercaSelected = pygame.image.load("assets/images/menu/config.png")
+    tuercaSelected = pygame.image.load("assets/images/menu/config selected.png")
 
     bPlay = pygame.image.load("assets/images/menu/play.png")
     bPlay = pygame.transform.scale(bPlay, (300, 180))
